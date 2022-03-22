@@ -1,8 +1,10 @@
 {
-    "people": {
-        "id": 1,
-        "name": "UserName",
-        "login": "userLogin",
-        "pass": "123123"
-    }
+    "people": [
+        {
+            "id": 1,
+            "name": "UserName",
+            "login": "userLogin",
+            "pass": "123123"
+        }
+    ]
 }
