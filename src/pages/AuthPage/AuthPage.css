@@ -1,0 +1,16 @@
+.card__body {
+  margin-top: 3rem;
+}
+
+.singIn-btn {
+  margin-right: 2rem;
+}
+
+input:invalid {
+  border-color: red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+
+.red-color {
+  color: red;
+}

@@ -1,0 +1,12 @@
+.profile {
+}
+
+.profile__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.profile__title {
+  margin: 0;
+}

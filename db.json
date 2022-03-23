@@ -1,10 +1,46 @@
 {
-    "people": [
-        {
-            "id": 1,
-            "name": "UserName",
-            "login": "userLogin",
-            "pass": "123123"
-        }
-    ]
+  "people": [
+    {
+      "id": 1,
+      "name": "UserName",
+      "login": "userLogin",
+      "pass": "123123",
+      "email": "test@test.test"
+    },
+    {
+      "id": 2,
+      "name": "UserName2",
+      "login": "userLogin6",
+      "pass": "123123",
+      "email": "test2@test.test"
+    },
+    {
+      "id": 3,
+      "name": "UserName3",
+      "login": "userLogin6",
+      "pass": "123123",
+      "email": "test3@test.test"
+    },
+    {
+      "id": 4,
+      "name": "UserName4",
+      "login": "userLogin6",
+      "pass": "123123",
+      "email": "test4@test.test"
+    },
+    {
+      "id": 5,
+      "name": "UserName5",
+      "login": "userLogin6",
+      "pass": "123123",
+      "email": "test5@test.test"
+    },
+    {
+      "id": 6,
+      "name": "UserName6",
+      "login": "userLogin6",
+      "pass": "123123",
+      "email": "test6@test.test"
+    }
+  ]
 }
