@@ -15,11 +15,9 @@
       "email": "test2@test.test"
     },
     {
-      "id": 3,
-      "name": "UserName3",
-      "login": "userLogin6",
-      "pass": "123123",
-      "email": "test3@test.test"
+      "name": "asdasdasd",
+      "login": 123123,
+      "id": 3
     },
     {
       "id": 4,
@@ -34,13 +32,6 @@
       "login": "userLogin6",
       "pass": "123123",
       "email": "test5@test.test"
-    },
-    {
-      "id": 6,
-      "name": "UserName6",
-      "login": "userLogin6",
-      "pass": "123123",
-      "email": "test6@test.test"
     }
   ]
 }

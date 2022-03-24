@@ -1,15 +1,19 @@
 import React from "react";
 import { IUser } from "../../models/IUser";
 
-import "./User";
+import "./User.css";
 
 interface UserProps {
   user: IUser;
+  editUser: Function;
 }
 
-export const User: React.FC<UserProps> = ({ user }) => {
+export const User: React.FC<UserProps> = ({ user, editUser }) => {
+  const chengeHendler = () => {
+    editUser(user.id);
+  };
   return (
-    <div className="col s3">
+    <div className="col s3" onClick={chengeHendler}>
       <div className="card blue-grey">
         <div className="card-content white-text">
           <p className="card-title">{user.name}</p>
