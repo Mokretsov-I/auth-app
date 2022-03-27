@@ -4,7 +4,7 @@
 
 2. install modules:<br>
     npm: " npm i " or " npm install "<br>
-    yarn " yarn i " or " yarn install "
+    yarn: " yarn install "
    
 3. run script:<br>
     npm: " npm run dev "<br>
