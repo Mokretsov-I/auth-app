@@ -15,7 +15,7 @@ export const AuthPage = () => {
     setForm({ ...form, [event.target.name]: event.target.value });
   };
 
-  const onSingIn = (event: React.MouseEvent<HTMLElement>) => {
+  const onSignIn = (event: React.MouseEvent<HTMLElement>) => {
     event.preventDefault();
     if (form.email && form.password) dispatch(getUserByEmail(form));
   };
@@ -58,12 +58,11 @@ export const AuthPage = () => {
           </div>
           <div className="card-action">
             <button
-              onClick={onSingIn}
+              onClick={onSignIn}
               className="btn green darken-1 singIn-btn"
             >
               Войти
             </button>
-            <button className="btn blue darken-4">Зарегистрироваться</button>
           </div>
         </div>
       </div>

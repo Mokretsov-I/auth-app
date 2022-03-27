@@ -1,5 +1,55 @@
-.users {
+.users__search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.search-user form {
+  display: flex;
+  align-items: center;
+}
+
+.search-user__label {
+  font-size: 1.3rem;
+}
+
+.search-user__input {
+  margin: 0 10px !important;
+}
+
+.users-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-gap: 15px;
+}
+
+.users-list__item {
+  cursor: pointer;
+}
+
+.editBackground {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.users-list__item.edit {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1240px) {
+  .users-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .users-list {
+    grid-template-columns: 1fr;
+  }
 }

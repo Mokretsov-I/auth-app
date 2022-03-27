@@ -13,14 +13,12 @@ export const User: React.FC<UserProps> = ({ user, editUser }) => {
     editUser(user.id);
   };
   return (
-    <div className="col s3" onClick={chengeHendler}>
-      <div className="card blue-grey">
-        <div className="card-content white-text">
-          <p className="card-title">{user.name}</p>
-          <div className="card__body">
-            <p>Email: {user.email}</p>
-            <p>Логин: {user.login}</p>
-          </div>
+    <div className="card blue-grey" onClick={chengeHendler}>
+      <div className="card-content white-text">
+        <p className="card-title">{user.name}</p>
+        <div className="card__body">
+          <p>Email: {user.email}</p>
+          <p>Логин: {user.login}</p>
         </div>
       </div>
     </div>

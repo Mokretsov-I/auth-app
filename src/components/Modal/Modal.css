@@ -1,0 +1,26 @@
+body {
+  overflow: hidden;
+}
+
+.app-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-modal__contant {
+  min-width: 50%;
+  min-height: 200px;
+  max-width: 90%;
+  background-color: rgb(233, 219, 219);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 25px;
+}

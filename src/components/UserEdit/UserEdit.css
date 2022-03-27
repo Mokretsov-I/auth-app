@@ -1,5 +1,5 @@
-.users {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 15px;
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }

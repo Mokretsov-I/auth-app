@@ -9,8 +9,6 @@ import "./App.css";
 function App() {
   const { currentUser } = useAppSelector((state) => state.userReducer);
 
-  console.log(currentUser);
-
   return (
     <div className="App">{currentUser ? <UsersPage /> : <AuthPage />}</div>
   );

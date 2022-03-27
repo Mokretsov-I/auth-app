@@ -11,7 +11,9 @@ interface UserState {
 
 const initialState: UserState = {
   users: [],
-  currentUser: undefined,
+  currentUser: sessionStorage.getItem("user")
+    ? JSON.parse(sessionStorage.getItem("user") as string)
+    : undefined,
   isLoading: false,
   isLogin: false,
   error: "",
@@ -23,6 +25,8 @@ export const userSlice = createSlice({
   reducers: {
     setCurrentUser(state, action: PayloadAction<IUser>) {
       state.currentUser = action.payload;
+      sessionStorage.setItem("user", JSON.stringify(action.payload));
+      state.isLoading = false;
     },
     usersFetching(state) {
       state.isLoading = true;
@@ -35,6 +39,24 @@ export const userSlice = createSlice({
     usersFetchingError(state, action: PayloadAction<string>) {
       state.isLoading = false;
       state.error = action.payload;
+    },
+    editUser(state, action: PayloadAction<IUser>) {
+      state.users = state.users.map((u) =>
+        u.id === action.payload.id ? action.payload : u
+      );
+      state.isLoading = false;
+    },
+    removeUser(state, action: PayloadAction<number>) {
+      state.users = state.users.filter((u) => u.id !== action.payload);
+      state.isLoading = false;
+    },
+    addUser(state, action: PayloadAction<IUser>) {
+      state.users = [...state.users, action.payload];
+      state.isLoading = false;
+    },
+    signOutUser(state) {
+      sessionStorage.removeItem("user");
+      state.currentUser = undefined;
     },
   },
 });
